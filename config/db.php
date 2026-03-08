@@ -1,8 +1,8 @@
 <?php
-define('DB_HOST', '');
-define('DB_NAME', 'nwp_vehicle');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_HOST', 'vehicle-db');
+define('DB_NAME', 'nwp_db');
+define('DB_USER', 'nwp_user');
+define('DB_PASS', 'nwp_pass');
 define('DB_CHARSET', 'utf8mb4');
 
 try {
@@ -17,3 +17,4 @@ try {
     http_response_code(500);
     die(json_encode(['error' => 'Database connection failed: ' . $e->getMessage()]));
 }
+
